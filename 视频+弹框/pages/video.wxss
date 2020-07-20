@@ -1,0 +1,197 @@
+/* pages/video.wxss */
+.fixed {
+    width: 700rpx;
+    height: 400rpx;
+    background: green;
+    position: fixed;
+    top: 10rpx;
+    left: 25rpx;
+    z-index: 999;
+}
+
+.video-list {
+    position: relation;
+    margin-top: 450rpx;
+    background-color: #fff;
+}
+
+.video {
+    position: relation;
+    width: 700rpx;
+    height: 300rpx;
+    color: red;
+    margin: 50rpx auto;
+    /* background: green; */
+}
+
+
+.videoTop {
+    height: 250rpx;
+    border: 1px solid;
+}
+
+.viderBottom {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.viderBottom>text {
+    flex: 1;
+    border: 1px solid;
+    text-align: center;
+    margin-left: -2rpx;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+}
+
+.shadowModal {
+    position: fixed;
+    /* z-index: 1111; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.tipsModal {
+    display: flex;
+}
+
+.commentModal {
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50rpx 50rpx 0 0px;
+    background-color: #fff;
+    padding: 30rpx;
+}
+
+.closeModal {
+    width: 30rpx;
+}
+
+.titleModal {
+    flex: 1;
+    text-align: center;
+}
+
+.contentModal {
+    margin-top: 40rpx;
+    overflow-y: auto;
+    height: 600rpx;
+}
+
+.bottom-pos {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+/* 弹出评论内容下面的输入框 */
+.buttomModal {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.buttomModal>image {
+    width: 70rpx;
+    height: 75rpx;
+    vertical-align: middle;
+}
+
+.inputModal {
+    flex: 1;
+    padding: 10rpx;
+    border: 1px solid #ddd;
+}
+
+.inputSmile {
+    width: 70rpx;
+    text-align: center;
+    line-height: 70rpx;
+}
+
+/* 弹出评论框结束 */
+/*底部的功能按钮*/
+
+.content_function {
+    display: flex;
+    padding-top: 20rpx;
+    clear: both;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.content_function view {
+    width: 33%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.content_function button {
+    background: transparent;
+    line-height: 0px;
+    font-size: 12px;
+    outline: 0 none;
+    display: inline;
+}
+
+.content_function button::after {
+    border: none;
+    border-radius: 0;
+}
+
+.liulan image {
+    width: 22px;
+    margin-right: 5px;
+}
+
+.liuyan image {
+    width: 14px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.dianzhan image {
+    width: 15px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.zhuanfa image {
+    width: 15px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.content_function .iconfont {
+    margin-right: 5px;
+    color: #666;
+}
+
+/*内容页*/
+
+.content {
+    margin: 40px 0px 50px 0px;
+    /* height: 490rpx; */
+    overflow-y: auto;
+}
+
+.section {
+    margin-top: 20rpx;
+    background-color: #fff;
+}
+
+.info {
+    padding: 0rpx 60rpx;
+    border-bottom: 1rpx solid #eee;
+}

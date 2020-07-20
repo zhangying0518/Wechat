@@ -1,0 +1,106 @@
+<view>
+    <!-- <button bindtap="addVideo">添加视频</button> -->
+    <view class="fixed"></view>
+    <view class="video-list">
+        <view class="video videoFirst">
+            <view class="videoTop">
+                <video src="{{mapUrl}}" danmu-btn="true" enable-danmu="true" controls> </video>
+            </view>
+            <view class="viderBottom">
+                <text bindtap="showcommBox">评论</text>
+                <text>点赞</text>
+                <text>分享</text>
+            </view>
+        </view>
+        <view class="video">
+            <view class="videoTop">
+                <video src="{{mapUrl}}" danmu-btn="true" enable-danmu="true"> </video>
+            </view>
+            <view class="viderBottom">
+                <text bindtap="showcommBox">评论</text>
+                <text>点赞</text>
+                <text>分享</text>
+            </view>
+        </view>
+        <view class="video">
+            <view class="videoTop">
+                <video src="{{mapUrl}}" danmu-btn="true" enable-danmu="true"> </video>
+            </view>
+            <view class="viderBottom">
+                <text bindtap="showcommBox">评论</text>
+                <text>点赞</text>
+                <text>分享</text>
+            </view>
+        </view>
+        <view class="video">
+            <view class="videoTop">
+                <video src="{{mapUrl}}" danmu-btn="true" enable-danmu="true"> </video>
+            </view>
+            <view class="viderBottom">
+                <text bindtap="showcommBox">评论</text>
+                <text>点赞</text>
+                <text>分享</text>
+            </view>
+        </view>
+        <view class="video">
+            <view class="videoTop">
+                <video src="{{mapUrl}}" danmu-btn="true" enable-danmu="true"> </video>
+            </view>
+            <view class="viderBottom">
+                <text bindtap="showcommBox">评论</text>
+                <text>点赞</text>
+                <text>分享</text>
+            </view>
+        </view>
+        <view class="video">
+            <view class="videoTop">
+                <video src="{{mapUrl}}" danmu-btn="true" enable-danmu="true"> </video>
+            </view>
+            <view class="viderBottom">
+                <text bindtap="showcommBox">评论</text>
+                <text>点赞</text>
+                <text>分享</text>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{hideModal}}">
+        <view class="shadowModal"></view>
+        <view class="commentModal bottom-pos" animation="{{animationData}}">
+            <view class="tipsModal">
+                <text class="closeModal" bindtap="hideCommBox">X</text>
+                <text class="titleModal">2条评论</text>
+            </view>
+            <view class="contentModal">
+                <view>111</view>
+                <view>222</view>
+                <view>333</view>
+                <view>111</view>
+                <view>222</view>
+                <view>333</view>
+                <view>111</view>
+                <view>222</view>
+                <view>333</view>
+                <view>111</view>
+                <view>222</view>
+                <view>333</view>
+                <view>111</view>
+                <view>222</view>
+                <view>333</view>
+                <view>111</view>
+                <view>222</view>
+                <view>333</view>
+                <view>111</view>
+                <view>222</view>
+                <view>333</view>
+                <view>111</view>
+                <view>222</view>
+                <view>333</view>
+            </view>
+            <view class="buttomModal">
+                <!-- <image src="../image/photo.jpg"></image> -->
+                <text class="inputModal">请输入评论</text>
+                <text class="inputSmile">🙃</text>
+            </view>
+        </view>
+    </view>
+</view>
