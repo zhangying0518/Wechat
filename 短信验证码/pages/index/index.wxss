@@ -1,0 +1,43 @@
+.showPhone{
+  font-size: 30rpx;
+  color: #666;
+  margin-top: 30rpx;
+}
+.loginCode{
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  text-align: center;
+}
+.loginCode>input{
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  margin: 0 10rpx;
+}
+.codeFooter{
+  font-size: 30rpx;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+.codeFooter>text{
+  vertical-align: middle;
+  line-height: 60rpx;
+}
+.sengCode{
+  border: 1px solid #ddd;
+  padding: 10rpx 30rpx;
+}
+.sendIng{
+  background: #fff;
+}
+.Resend{
+  background: #f1d089;
+  color: #fff;
+}
+/* 伪输入框 */
+.ipt{ 
+  width: 0; 
+  height: 0; 
+ } 
