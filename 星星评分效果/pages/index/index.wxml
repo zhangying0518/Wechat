@@ -1,0 +1,14 @@
+<view class="container">
+  <view class='stars'>
+    <image src=''></image>
+    <view class='content'>
+      <view>评分</view>
+      <view>
+        <view wx:for="{{stars}}" wx:key="index" style='background:url("{{item.flag==1?item.noColor:item.hasColor}}") no-repeat top; background-size:100%;' data-index="{{index}}" bindtap='score'></view>
+      </view>
+    </view>
+  </view>
+  <view class='reviews'>
+    <textarea placeholder='请写下购买体会或商品的相关信息，可以拉其他小伙伴提供参考~（评价在100字以内）'></textarea>
+  </view>
+</view>
