@@ -1,0 +1,6 @@
+.realize{
+  width: 300rpx;
+  border: 1px solid red;
+  margin: 100rpx auto;
+  text-align: center;
+}

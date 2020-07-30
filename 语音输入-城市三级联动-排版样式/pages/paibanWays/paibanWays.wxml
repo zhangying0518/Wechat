@@ -1,0 +1,9 @@
+<view>
+	<view wx:for="{{list}}" class="{{item.type=='0'?'box':item.type=='1'?'item':'content'}}">
+		<view bindtap="{{item.type=='0'?'box':item.type=='1'?'item':'content'}}">
+			<view>{{item.num}}</view>
+			<view>{{item.num1}}</view>
+			<view catchtap="{{item.type=='2' ? 'spe' :''}}">{{item.num2}}</view>
+		</view>
+	</view>
+</view>
