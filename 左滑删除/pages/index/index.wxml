@@ -1,0 +1,13 @@
+<scroll-view scroll-y enable-back-to-top >
+	<view>
+		<block wx:for="{{ list }}" wx:for-item="item" wx:for-index="index" wx:key="index">
+			<view class="list {{ item.isTouchMove ? 'touch-move-active' : '' }}" bindtouchstart="touchStart" bindtouchmove="touchMove" data-index="{{ index }}">
+				<view class="txt">{{ item.id }} -- {{ item.title }}
+          <view>111</view>
+          <view>222</view>
+        </view>
+				<view class="del" bindtap="delList" data-index="{{ index }}"> 删除 </view>
+			</view>
+		</block>
+	</view>
+</scroll-view>

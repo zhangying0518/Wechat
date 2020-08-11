@@ -1,0 +1,30 @@
+/* 列表 */
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid red;
+  margin-top: 30rpx;
+}
+/* 列表内容 */
+.list .txt {
+  width: 100%;
+  margin-left: -150rpx;
+  box-sizing: border-box;
+  transform: translateX(150rpx);
+  transition: all 0.4s;
+}
+/* 删除按钮 */
+.list .del {
+  box-sizing: border-box;
+  width: 150rpx;
+  color: #fff;
+  background-color: #fe3e2f;
+  transform: translateX(150rpx);
+  transition: all 0.4s;
+}
+.touch-move-active .txt,.touch-move-active .del {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}

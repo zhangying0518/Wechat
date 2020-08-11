@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/yuyin/yuyin",
     "pages/cityLiandong/cityLiandong",
+    "pages/yuyin/yuyin",
+   
     "pages/paibanWays/paibanWays"
   ],
   "window": {

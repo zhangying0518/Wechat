@@ -1,5 +1,21 @@
 <view>
-	<picker mode="region" bindchange="bindRegionChange" value="{{detailed}}">
+	<!-- <picker mode="region" bindchange="bindRegionChange" value="{{detailed}}">
 		<view style="color:red">{{detailed}}</view>
-	</picker>
+	</picker> -->
+	<!-- --------------------- -->
+	<!-- 方式2的代码 -->
+	<view bindtap="click">{{year}}年{{month}}月{{day}}日</view>
+	<button bindtap="confirm" wx:if="{{isShow}}">确定</button>
+	<picker-view indicator-style="height: 50px;" class="pickerView" value="{{value}}" bindchange="bindChange" wx:if="{{isShow}}">
+		<picker-view-column class="list1">
+			<view wx:for="{{years}}" class="list">{{item}}年</view>
+		</picker-view-column>
+		<picker-view-column class="list2">
+			<view wx:for="{{months}}" class="list">{{item}}月</view>
+		</picker-view-column>
+		<picker-view-column class="list3"> 
+			<view wx:for="{{days}}">{{item}}日</view>
+		</picker-view-column>
+	</picker-view>
+	<!-- ------------------ -->
 </view>

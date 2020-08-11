@@ -1,1 +1,12 @@
-
+.pickerView {
+  width: 100%;
+  height: 300px;
+}
+.list1,.list2,.list3{
+  border: 1px solid red;
+  margin-left: -1px;
+  text-align: center;
+}
+.list1{
+  margin-left: 1px;
+}
