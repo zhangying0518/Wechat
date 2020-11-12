@@ -1,0 +1,127 @@
+page{
+  padding-bottom: 90rpx;
+}
+.address_btn{
+  padding: 20rpx;
+}
+.address_btn button{
+  width: 60%;
+}
+.user_info_row{
+  display: flex;
+  padding: 20rpx;
+}
+.user_info{
+  flex: 5;
+}
+.uer_phone{
+  flex: 3;
+  text-align: right;
+}
+/* 购物车 */
+.cart_title{
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 36rpx;
+  color: var(--themeColor);
+  border-top: 2rpx solid #666;
+  border-bottom: 2rpx solid #666;
+}
+.cart_item{
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1px solid #ccc;
+}
+.cart_chk_wrap{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_img_wrap{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_img_wrap image{
+  width: 80%;
+}
+.cart_info_wrap{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goods_name{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #666;
+}
+.goods_price_wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.goods_price{
+  color: red;
+  font-size: 34rpx;
+}
+.cart_num_tool{
+  display: flex;
+}
+.num_edit{
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+.goods_num{
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 底部工具栏 */
+.gooter_tool{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+.all_chk_wrap{
+  flex:2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total_price_wrap{
+  flex:5;
+  text-align: right;
+  padding-right: 15rpx;
+}
+.total_price_text{
+  color: var(--themeColor);
+  font-size: 32rpx;
+  font-weight: 600;
+  font-size: 34rpx;
+}
+.order_pay_wrap{
+  flex:3;
+  background-color: var(--themeColor);
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

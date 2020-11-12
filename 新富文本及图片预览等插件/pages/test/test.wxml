@@ -1,0 +1,31 @@
+<!-- test.wxml -->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">自定义测试</view>
+    <view class="page__desc">您可以输入字符串或点击下方模板进行测试</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-cells__title" id="result">解析结果</view>
+    <view class="weui-cells parse-view">
+      <parser html="{{html}}" tag-style="{{tagStyle}}" />
+    </view>
+    <view class="weui-cells__title">输入字符
+      <view class="link" hover-class="link-hover" style="float:right" bindtap="file">文件读取</view>
+    </view>
+    <view class="editor-view">
+      <parser hidden="{{tooLong}}" class="highlight-view" html="{{code}}" />
+      <editor id="editor" class="editor" placeholder="{{modes[index]}}" style="color:{{tooLong?'#ccc':'transparent'}}" bindinput="input" />
+    </view>
+    <view class="labels">
+      <view class="label" data-type="table" bindtap="addTemplate">表格</view>
+      <view class="label" data-type="list" bindtap="addTemplate">列表</view>
+      <view class="label" data-type="img" bindtap="addTemplate">图片</view>
+      <view class="label" data-type="a" bindtap="addTemplate">链接</view>
+      <view class="label" data-type="code" bindtap="addTemplate">代码</view>
+    </view>
+    <view class="weui-btn-area">
+      <button class="weui-btn" bindtap="parse" type="primary" disabled="{{times==0}}">解析</button>
+      <button class="weui-btn" bindtap="clear">清空</button>
+    </view>
+  </view>
+</view>

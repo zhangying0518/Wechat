@@ -1,0 +1,14 @@
+.tabs_title{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.title_item{
+  padding: 15rpx 0;
+  flex: 1;
+}
+.active{
+  color:var(--themeColor);
+  border-bottom: 5rpx solid var(--themeColor);
+
+}

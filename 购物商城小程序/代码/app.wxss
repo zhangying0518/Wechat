@@ -1,0 +1,8 @@
+/* 定义主题颜色 */
+page{
+  --themeColor:#eb4450;
+  font-size: 30rpx;
+}
+image{
+  width: 100%;
+}

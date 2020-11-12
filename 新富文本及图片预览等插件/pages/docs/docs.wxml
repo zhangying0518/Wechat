@@ -1,0 +1,12 @@
+<!-- docs.wxml -->
+<view class="page__hd">
+  <view class="page__title">说明文档</view>
+  <view class="page__desc">{{title}}</view>
+</view>
+<view class="page__bd">
+  <view class="weui-article">
+    <parser id="article" tag-style="{{tagStyle}}" loading-img="https://6874-html-foe72-1259071903.tcb.qcloud.la/loading.jpg?sign=0236c3a5450fa5417d80b94c888eeb0f&t=1590221318" bindlinkpress="link" use-cache show-with-animation>
+      <view class="loading">拼命加载中</view>
+    </parser>
+  </view>
+</view>

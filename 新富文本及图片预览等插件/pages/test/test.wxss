@@ -1,0 +1,82 @@
+/* test.wxss */
+page {
+  background-color: #f8f8f8;
+}
+
+.parse-view {
+  padding: 10px;
+  margin-top: 0;
+}
+
+.editor-view {
+  position: relative;
+  color: #ccc;
+  background: #2d2d2d;
+  border-top: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+
+.highlight-view {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+}
+
+.editor {
+  height: auto;
+  padding: 10px;
+  font-family: monospace;
+  word-break: break-all;
+  caret-color: #ccc;
+}
+
+.labels {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.label {
+  width: auto;
+  height: 25px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin: 5px;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+.weui-cells__title {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 0.77em;
+  margin-bottom: 0.3em;
+  font-size: 14px;
+  color: #999;
+}
+
+.weui-textarea {
+  display: block;
+  width: 100%;
+}
+
+.weui-btn {
+  margin-top: 15px;
+}
+
+.weui-btn:first-child {
+  margin-top: 0;
+}
+
+.weui-btn-area {
+  margin: 1.17647059em 15px 0.3em;
+}
+
+.ql-editor.ql-blank::before {
+  color: #ccc;
+}

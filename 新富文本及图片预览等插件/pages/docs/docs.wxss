@@ -1,0 +1,6 @@
+/* docs.wxss */
+.loading {
+  color:gray;
+  text-align: center;
+  font-size: 18px;
+}

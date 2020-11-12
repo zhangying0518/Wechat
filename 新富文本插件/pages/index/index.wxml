@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <parser html="{{html}}" bindlinkpress="linkpress"/>
+  <view bindtap="click">点击获取数据</view>
+</view>
