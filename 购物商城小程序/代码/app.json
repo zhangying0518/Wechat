@@ -1,13 +1,20 @@
 {
   "pages": [
+    "pages/user/user",
+    "pages/feedback/feedback",
+    "pages/order/order",
+    "pages/collect/collect",
+    "pages/login/login",
+    "pages/pay/pay",
+    "pages/authy/authy",
     "pages/cart/cart",
     "pages/good_list/good_list",
     "pages/index/index",
-   
     "components/tabs/tabs",
     "pages/good_detail/good_detail",
+    "pages/search/search",
     "pages/category/category"
-   
+
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,6 +35,10 @@
       {
         "pagePath": "pages/cart/cart",
         "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心"
       }
     ]
   },

@@ -56,6 +56,9 @@ swiper {
   font-weight: 600;
   padding: 40rpx 20rpx;
 }
+.isCollect{
+  color: red;
+}
 
 /* 底部定位 */
 .btm_tool {

@@ -1,12 +1,6 @@
 page{
   padding-bottom: 90rpx;
 }
-.address_btn{
-  padding: 20rpx;
-}
-.address_btn button{
-  width: 60%;
-}
 .user_info_row{
   display: flex;
   padding: 20rpx;
@@ -31,12 +25,6 @@ page{
   display: flex;
   padding: 10rpx;
   border-bottom: 1px solid #ccc;
-}
-.cart_chk_wrap{
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .cart_img_wrap{
   flex: 2;
@@ -72,14 +60,6 @@ page{
 .cart_num_tool{
   display: flex;
 }
-.num_edit{
-  width: 55rpx;
-  height: 55rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ccc;
-}
 .goods_num{
   width: 55rpx;
   height: 55rpx;
@@ -97,12 +77,6 @@ page{
   background-color: #fff;
   display: flex;
   border-top: 1px solid #ccc;
-}
-.all_chk_wrap{
-  flex:2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .total_price_wrap{
   flex:5;

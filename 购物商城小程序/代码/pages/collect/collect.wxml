@@ -1,0 +1,23 @@
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handTabsItemChange">
+  <view class="collect_main">
+    <view class="collect_title">
+      <text class="collect_tips active">全部</text>
+      <text class="collect_tips">正在热卖</text>
+      <text class="collect_tips">即将上线</text>
+    </view>
+    <veiw class="collect_content">
+      <view class="first_tab">                                                
+        <navigator class="goods_item" wx:for="{{collect}}" wx:key="index" url="/pages/good_detail/good_detail?goods_id={{item.goods_id}}">
+          <view class="goods_img_wrap">
+            <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://cn.vuejs.org/images/logo.png'}}"></image>
+          </view>
+          <view class="goods_info_wrap">
+            <view class="goods_name">{{item.goods_name}}</view>
+            <view class="goods_price">{{item.goods_price}}</view>
+          </view>
+        </navigator>
+      </view>
+
+    </veiw>
+  </view>
+</Tabs>

@@ -1,0 +1,4 @@
+<view class="up_img_wrap">
+  <image src="{{src}}"></image>
+  <text>X</text>
+</view>

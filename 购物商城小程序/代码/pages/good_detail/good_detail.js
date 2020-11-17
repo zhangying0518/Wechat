@@ -5,9 +5,9 @@ import regeneratorRuntime from '../../lib/runtime/runtime'
 Page({
   data: {
     goodsObj: {},
+    isCollect:false,//默认没有收藏
   },
   onLoad: function (options) {
-    console.log("goods_id",options)
     this.getGoodsDetail(options.goods_id)
   },
   // 点击加入购物车
@@ -17,10 +17,9 @@ Page({
     var cart = wx.getStorageSync('cart')||[]
     // 2.判断需要添加的这个商品数据是否存在于缓存中
     var index = cart.findIndex(v=>v.goods_id==goodsObj.goods_id)
-    console.log("index",index)
     if(index==-1){//3.购物车中不存在数据，也就是第一次添加
       goodsObj.num = 1
-      goodsObj.checked = true
+      goodsObj.checked = false
       cart.push(goodsObj)
     }else{//4.已经存在购物车 执行num++
       cart[index].num++
@@ -52,8 +51,44 @@ Page({
         goods_id: id
       }
     })
+    // 收藏功能
     this.setData({
-      goodsObj
+      goodsObj,
+    })
+    let collect = wx.getStorageSync('collect')||[]
+    let isCollect = collect.some(v=>v.goods_id==this.data.goodsObj.goods_id)//some函数是只要有一个是true 结果是返回true
+    this.setData({
+      isCollect
     })
   },
+  // 点击收藏
+  handleCollect(){
+    let isCollect = false
+    // 1.获取缓存中收藏的商品数组
+    let collect = wx.getStorageSync('collect')||[]
+    // 2.判断该商品是否被收藏过，当index不等于-1时表示已经收藏过
+    let index = collect.findIndex(v=>v.goods_id==this.data.goodsObj.goods_id)
+    if(index!==-1){//已经收藏过
+      collect.splice(index,1)
+      isCollect = false
+      wx.showToast({
+        title: '取消成功',
+        icon:"success",
+        mask:true
+      })
+    }else{//没有收藏过
+      collect.push(this.data.goodsObj)
+      isCollect = true
+      wx.showToast({
+        title: '收藏成功',
+        icon:"success",
+        mask:true
+      })
+    }
+    // 3.把数组存到缓存中
+    wx.setStorageSync('collect', collect)
+    this.setData({
+      isCollect
+    })
+  }
 })
