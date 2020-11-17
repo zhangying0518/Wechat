@@ -1,4 +1,4 @@
-// app.js
+// app.js111
 App({
   onPageNotFound() {
     wx.redirectTo({
